@@ -10,7 +10,9 @@ const listItem = (props) => {
                 <span>Published on {formatDate(props.item.date)}</span>
             </div>
             <div className="post-title">
-                <h2><a href={props.item.link} target="_blank" rel="noopener noreferrer" title={props.item.title.rendered}>{props.item.title.rendered}</a></h2>
+                <h2>
+                    <a href={props.item.link} target="_blank" rel="noopener noreferrer" title={props.item.title.rendered} dangerouslySetInnerHTML={{ __html: props.item.title.rendered }}></a>
+                </h2>
             </div>
             <div className="post-link">
                 <span>{props.item.link}</span>

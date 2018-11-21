@@ -54,15 +54,20 @@ class Home extends Component {
         // retrieve and sort feeds data from feed sources
         FEEDS.map(feed => {
             return axios.get(feed.url).then(response => {
+
                 for (let key in response.data) {
                     feeds.push(response.data[key]);
                 }
+
+                feeds.sort(function(a, b) {
+                    return new Date(b.date) - new Date(a.date);
+                });
+
                 this.setState({feeds: feeds});
+
             }).catch(error => {
                 console.log(error);
             });
-        }).sort(function(a, b) {
-            return new Date(b.date) - new Date(a.date);
         });
 
         this.setState({feeds: feeds});

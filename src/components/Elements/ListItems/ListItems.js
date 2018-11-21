@@ -1,28 +1,19 @@
 import React from 'react';
 
 import ListItem from './ListItem/ListItem';
+import LoadingItems from './LoadingItems';
 
 const listItems = (props) => {
 
     // show loading status
-    if(props.feeds.length === 0) {
+    if (props.feeds.length === 0) {
         return (
-            <div className="card">
-                <div>
-                    <div className="loading-date"></div>
-                </div>
-                <div>
-                    <div className="loading-title"></div>
-                </div>
-                <div>
-                    <div className="loading-link"></div>
-                </div>
-            </div>
+            <LoadingItems />
         );
     }
 
     let itemsList = props.feeds.map(item => {
-        return <ListItem key={item.id} item={item} />
+        return <ListItem key={item.id} item={item}/>
     });
 
     return (
