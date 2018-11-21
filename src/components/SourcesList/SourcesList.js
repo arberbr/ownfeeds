@@ -10,6 +10,7 @@ const sourcesList = (props) => {
 
     return (
         <div className="sources-box">
+            <h3>Featured</h3>
             <ul className="sources-list">
                 {sourcesItems}
             </ul>

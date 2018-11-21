@@ -1,0 +1,32 @@
+.login-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 380px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.login-box {
+    padding: 15px;
+    background-color: #222;
+    color: #eee;
+    margin: 0 15px;
+}
+
+.login-wrapper a {
+    display: inline-block;
+    margin: 15px auto;
+    color: #00c853;
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    aside.login {
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+}

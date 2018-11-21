@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+
+// Higher Order Components
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 
 // Components
-import Aside from '../../components/Aside/Aside';
-import Main from '../../components/Main/Main';
+import Logo from "../../components/Logo/Logo";
+import Navigation from "../../components/Navigation/Navigation";
+import SourcesList from '../../components/SourcesList/SourcesList';
+import Credits from "../../components/Credits/Credits";
+import Header from "../../components/Header/Header";
+import ListItems from "../../components/ListItems/ListItems";
 
 // Methods
 import axios from 'axios';
@@ -42,6 +48,7 @@ const FEEDS = [
 ];
 
 class Home extends Component {
+
     state = {
     	feeds: [],
         mobileMenuShown: false
@@ -76,9 +83,7 @@ class Home extends Component {
 
     filterFeedContentBySource = (event, source) => {
         event.preventDefault();
-
         this.setState({feeds: []});
-
         let feeds = [];
         axios.get(source).then(response => {
             for (let key in response.data) {
@@ -92,19 +97,31 @@ class Home extends Component {
 
     toggleMobileMenu = (event) => {
         event.preventDefault();
-
         this.setState(prevState => ({
             mobileMenuShown: !prevState.mobileMenuShown
         }));
     };
 
     render() {
+
+        let asideClasses = '';
+        if(this.state.mobileMenuShown) asideClasses = 'active';
+
         return (
             <Aux>
-                <Aside sources={FEEDS} clicked={this.filterFeedContentBySource} show={this.state.mobileMenuShown} />
-                <Main feeds={this.state.feeds} clicked={this.toggleMobileMenu} />
+                <aside className={asideClasses}>
+                    <Logo />
+                    <Navigation />
+                    <SourcesList sources={FEEDS} clicked={this.filterFeedContentBySource} />
+                    <Credits />
+                </aside>
+                <main>
+                    <Header clicked={this.toggleMobileMenu} />
+                    <ListItems feeds={this.state.feeds} />
+                </main>
             </Aux>
         );
+
     };
 
 };

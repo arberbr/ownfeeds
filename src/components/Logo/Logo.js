@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 const logo = (props) => {
     return (
-        <a className="logo-link" href="/" title="OwnFeeds - Feeds Reader">OwnFeeds</a>
+        <Link to="/" className="logo-link" title="OwnFeeds - Feeds Reader">OwnFeeds</Link>
     );
 };
 

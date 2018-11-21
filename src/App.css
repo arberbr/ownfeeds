@@ -56,9 +56,57 @@ aside {
     transition: all .4s linear;
 }
 
+aside.login {
+    max-width: 50%;
+}
+
 a {
     text-decoration: none;
     outline: none !important;
+}
+
+/*FORMS*/
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+input[type="date"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 1;
+    padding: 12px 0;
+    border: 1px solid transparent;
+    background-color: #222;
+    color: #fff;
+    margin: 15px 0;
+    font-size: 16px;
+    transition: .3s;
+}
+
+input:focus {
+    border-bottom: 1px solid #00c853;
+    color: #00c853;
+}
+
+button {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #ddd;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:active,
+button:focus {
+    color: #00c853;
 }
 
 .logo-link {
@@ -71,6 +119,22 @@ a {
 }
 
 /*Sources List*/
+.sources-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    clear: both;
+    margin: 20px 0;
+}
+
+.sources-box h3 {
+    font-size: 1.2em;
+    color: #eee;
+    padding: 0;
+    color: #00c853;
+}
+
 .sources-list li {
     margin: 5px 0;
 }
@@ -104,7 +168,7 @@ a {
 
 /*Card Element*/
 .card {
-    margin: 20px;
+    margin: 15px;
     padding: 1em 0;
     background-color: #222;
 }

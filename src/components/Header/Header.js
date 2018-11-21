@@ -6,7 +6,7 @@ const header = (props) => {
     return (
         <header>
             <Logo />
-            <a href="/" className="mobile-menu-toggle" title="Toggle Menu" onClick={(event) => props.clicked(event)}>Menu</a>
+            <a href="/" className="mobile-menu-toggle" title="Toggle Menu" onClick={props.clicked}>Menu</a>
         </header>
     );
 };
