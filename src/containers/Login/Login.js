@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Login.css';
 
 // Higher Order Components
-import Aux from "../../hoc/Auxiliary/Auxiliary";
+import Aux from "../../hoc/Auxiliary";
 
 // Components
 import Input from '../../components/UI/Input/Input';

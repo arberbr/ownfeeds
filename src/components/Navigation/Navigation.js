@@ -2,7 +2,7 @@ import React from 'react';
 import './Navigation.css';
 
 // Components
-import NavigationItem from './NavigationItem/NavigationItem';
+import NavigationItem from './NavigationItem';
 
 const navigation = (props) => {
     return (

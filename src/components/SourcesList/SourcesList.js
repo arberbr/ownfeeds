@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SourceList from './SourceList/SourceList';
+import SourceList from './SourceList';
 
 const sourcesList = (props) => {
 

@@ -5,7 +5,7 @@ import {Redirect, Route, Switch} from 'react-router-dom';
 
 import Home from './containers/Home/Home';
 
-import asyncComponent from './hoc/asyncComponent/asyncComponent';
+import asyncComponent from './hoc/asyncComponent';
 
 const asyncLogin = asyncComponent(() => import ('./containers/Login/Login'));
 

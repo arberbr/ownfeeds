@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Higher Order Components
-import Aux from '../../hoc/Auxiliary/Auxiliary';
+import Aux from '../../hoc/Auxiliary';
 
 // Components
 import Logo from "../../components/Logo/Logo";

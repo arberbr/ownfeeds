@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Helpers
-import { formatDate } from "../../../shared/helpers";
+import { formatDate } from "../../shared/helpers";
 
 const listItem = (props) => {
     return (
