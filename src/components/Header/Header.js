@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Logo from '../../Elements/Logo/Logo';
+import Logo from '../Logo/Logo';
 
 const header = (props) => {
     return (

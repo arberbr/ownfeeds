@@ -62,11 +62,12 @@ a {
 }
 
 .logo-link {
-    display: block;
+    display: inline-block;
     color: #00c853;
     font-size: 1.6em;
     margin-bottom: 15px;
     line-height: 1.3;
+    clear: both;
 }
 
 /*Sources List*/

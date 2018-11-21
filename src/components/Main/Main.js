@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../Header/Header';
-import ListItems from '../../Elements/ListItems/ListItems';
+import ListItems from '../ListItems/ListItems';
 
 const main = (props) => {
     return (

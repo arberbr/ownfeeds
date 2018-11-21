@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 
 // Components
-import Aside from '../../components/Layouts/Aside/Aside';
-import Main from '../../components/Layouts/Main/Main';
+import Aside from '../../components/Aside/Aside';
+import Main from '../../components/Main/Main';
 
 // Methods
 import axios from 'axios';

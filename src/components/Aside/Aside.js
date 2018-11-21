@@ -1,8 +1,8 @@
 import React from 'react';
 
-import SourcesList from '../../Elements/SourcesList/SourcesList';
-import Credits from '../../Elements/Credits/Credits';
-import Logo from '../../Elements/Logo/Logo';
+import SourcesList from '../SourcesList/SourcesList';
+import Credits from '../Credits/Credits';
+import Logo from '../Logo/Logo';
 
 const aside = (props) => {
 
