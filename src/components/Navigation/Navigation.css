@@ -11,6 +11,7 @@
 }
 
 .navigation-menu a {
-    font-size: 16px;
-    color: #eee;
+    font-size: 18px;
+    color: #dedede;
+    font-weight: 600;
 }

@@ -7,8 +7,7 @@ import Aux from "../../hoc/Auxiliary";
 // Components
 import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
-import Logo from "../../components/Logo/Logo";
-import Credits from "../../components/Credits/Credits";
+import Logo from '../../components/Logo/Logo';
 
 // Helpers
 import { checkValidity, updateObject } from "../../shared/helpers";
@@ -105,8 +104,8 @@ class Login extends Component {
         return (
             <Aux>
                 <aside className={ asideClasses.join(' ') }>
-                    <Logo />
                     <div className="login-wrapper">
+                        <Logo />
                         <div className="login-box">
                             <form>
                                 {form}
@@ -115,7 +114,6 @@ class Login extends Component {
                             </form>
                         </div>
                     </div>
-                    <Credits />
                 </aside>
             </Aux>
         );
