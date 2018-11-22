@@ -6,6 +6,7 @@ aside.login {
 
 aside.login .logo-link {
     font-size: 1.3em;
+    margin: 0;
 }
 
 .login-wrapper {
