@@ -118,6 +118,6 @@ class Login extends Component {
             </Aux>
         );
     };
-};
+}
 
 export default Login;

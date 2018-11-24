@@ -9,6 +9,7 @@ const navigation = (props) => {
         <div className="navigation-menu">
             <ul>
                 <NavigationItem link="/login" name="Login" />
+                <NavigationItem link="/feeds" name="Feeds" />
             </ul>
         </div>
     );

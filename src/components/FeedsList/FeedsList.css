@@ -1,0 +1,21 @@
+.FeedsList {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+    margin: 20px auto;
+}
+
+.FeedItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    height: auto;
+    min-height: 150px;
+    background-color: #444;
+    margin: 5px;
+}
