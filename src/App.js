@@ -7,8 +7,8 @@ import Home from './containers/Home/Home';
 
 import asyncComponent from './hoc/asyncComponent';
 
-const asyncLogin = asyncComponent(() => import ('./containers/Login/Login'));
-const asyncFeedsChoser = asyncComponent(() => import ('./containers/FeedsChoser/FeedsChoser'));
+const asyncLogin = asyncComponent(() => import('./containers/Login/Login'));
+const asyncFeedsChoser = asyncComponent(() => import('./containers/FeedsChoser/FeedsChoser'));
 
 class App extends Component {
     render() {
