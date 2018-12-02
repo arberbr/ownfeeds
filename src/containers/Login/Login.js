@@ -68,13 +68,6 @@ class Login extends Component {
         console.log('clicked register');
     };
 
-    toggleMobileMenu = (event) => {
-        event.preventDefault();
-        this.setState(prevState => ({
-            mobileMenuShown: !prevState.mobileMenuShown
-        }));
-    };
-
     render() {
 
         const formElementsArray = [];
@@ -99,8 +92,7 @@ class Login extends Component {
         ));
 
         let asideClasses = ['login'];
-        if(this.state.mobileMenuShown) asideClasses.push('active');
-
+        
         return (
             <Aux>
                 <aside className={ asideClasses.join(' ') }>

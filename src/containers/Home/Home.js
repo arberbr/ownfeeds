@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { FEEDS } from '../../data';
 
+// Packages and Methods
+import axios from 'axios';
+
 // Higher Order Components
 import Aux from '../../hoc/Auxiliary';
 
@@ -11,9 +14,6 @@ import SourcesList from '../../components/SourcesList/SourcesList';
 import Credits from "../../components/Credits/Credits";
 import Header from "../../components/Header/Header";
 import ListItems from "../../components/ListItems/ListItems";
-
-// Methods
-import axios from 'axios';
 
 class Home extends Component {
 
