@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { FEEDS } from '../../data';
 
-// Packages and Methods
+// Packages, Methods and Helpers
 import axios from 'axios';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 // Higher Order Components
 import Aux from '../../hoc/Auxiliary';
+
+// Import Redux Actions
+import * as actions from '../../store/actions/index';
 
 // Components
 import Logo from "../../components/Logo/Logo";
@@ -58,12 +63,12 @@ class Home extends Component {
 
     render() {
 
-        let asideClasses = '';
-        if(this.state.mobileMenuShown) asideClasses = 'active';
+        let asideClasses = [];
+        if(this.state.mobileMenuShown) asideClasses.push('active');
 
         return (
             <Aux>
-                <aside className={asideClasses}>
+                <aside className={ asideClasses.join(' ') }>
                     <Logo />
                     <Navigation />
                     <SourcesList sources={FEEDS} clicked={this.filterFeedContentBySource} />
@@ -80,4 +85,17 @@ class Home extends Component {
 
 }
 
-export default Home;
+const mapStateToProps = state => {
+    return {
+        feeds: state.allFeeds
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onLoadFeeds: () => dispatch(actions.loadFeeds()),
+        onFilterFeeds: (sourceId) => dispatch(actions.filterFeeds(sourceId))
+    };
+};
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home));

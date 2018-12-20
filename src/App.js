@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// Import Packages
 import {Redirect, Route, Switch} from 'react-router-dom';
 
+// Import Components
 import Home from './containers/Home/Home';
 
 import asyncComponent from './hoc/asyncComponent';

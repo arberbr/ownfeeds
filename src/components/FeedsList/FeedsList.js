@@ -2,16 +2,17 @@ import React from 'react';
 import './FeedsList.css';
 
 // Components
-import FeedItem from "../../containers/FeedsChoser/FeedItem";
+import FeedItem from "./FeedItem";
 
 const feedsList = (props) => {
-    const feed={
-        id: 0,
-        name: 'hello'
-    };
+    
+    let feedItems = props.feeds.map(feed => {
+        return <FeedItem key={feed.link} clicked={props.clicked} feed={feed}/>
+    });
+    
     return (
         <div className="FeedsList">
-            <FeedItem clicked={props.clicked} feed={feed}/>
+            {feedItems}
         </div>
     );
 };

@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     width: 100%;
     height: auto;
     max-width: 1024px;
@@ -18,4 +17,14 @@
     min-height: 150px;
     background-color: #444;
     margin: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.chosen {
+    border: 2px solid #00c853;
+    color: #00c853;
+    background-color: #333;
 }
