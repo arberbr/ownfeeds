@@ -40,5 +40,19 @@ export const FEEDS = [
 		name: 'Delicious Brains',
 		url: 'https://deliciousbrains.com/wp-json/wp/v2/posts?per_page=10',
 		chosenStatus: false
+	},
+	{
+		id: 7,
+		link: 'wildml.com',
+		name: 'WildML',
+		url: 'http://www.wildml.com/wp-json/wp/v2/posts?per_page=10',
+		chosenStatus: false
+	},
+	{
+		id: 8,
+		link: 'blog.kaggle.com',
+		name: 'Kaggle Blog',
+		url: 'http://blog.kaggle.com/wp-json/wp/v2/posts?per_page=10',
+		chosenStatus: false
 	}
 ];
