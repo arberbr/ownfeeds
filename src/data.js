@@ -54,5 +54,12 @@ export const FEEDS = [
 		name: 'Kaggle Blog',
 		url: 'http://blog.kaggle.com/wp-json/wp/v2/posts?per_page=10',
 		chosenStatus: false
+	},
+	{
+		id: 9,
+		link: 'deepsense.ai',
+		name: 'Deepsense AI',
+		url: 'https://deepsense.ai/wp-json/wp/v2/posts?per_page=10',
+		chosenStatus: false
 	}
 ];
