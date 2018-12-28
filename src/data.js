@@ -47,12 +47,5 @@ export const FEEDS = [
 		name: 'Deepsense AI',
 		url: 'https://deepsense.ai/wp-json/wp/v2/posts?per_page=10',
 		chosenStatus: false
-	},
-	{
-		id: 8,
-		link: 'tympanus.net/codrops',
-		name: 'Codrops',
-		url: 'https://tympanus.net/codrops/wp-json/wp/v2/posts?per_page=10',
-		chosenStatus: false
 	}
 ];
