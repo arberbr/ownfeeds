@@ -47,5 +47,12 @@ export const FEEDS = [
 		name: 'Deepsense AI',
 		url: 'https://deepsense.ai/wp-json/wp/v2/posts?per_page=10',
 		chosenStatus: false
+	},
+	{
+		id: 8,
+		link: 'machinelearningmindset.com',
+		name: 'Machine Learning Mindset',
+		url: 'https://machinelearningmindset.com/wp-json/wp/v2/posts?per_page=10',
+		chosenStatus: false
 	}
 ];
