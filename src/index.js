@@ -2,6 +2,8 @@ import React from 'react';
 import './index.css';
 import App from './App';
 
+import registerServiceWorker from './registerServiceWorker';
+
 // Import Packages
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
@@ -13,17 +15,18 @@ import thunk from 'redux-thunk';
 import feedsReducer from './store/reducers/feeds';
 
 const rootReducer = combineReducers({
-    feedsReducer: feedsReducer
+	feedsReducer: feedsReducer
 });
 
 const store = createStore(rootReducer, applyMiddleware( thunk ));
 
 const app = (
-    <Provider store={store}>
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
-    </Provider>
+	<Provider store={store}>
+		<BrowserRouter>
+			<App/>
+		</BrowserRouter>
+	</Provider>
 );
 
 ReactDOM.render( app , document.getElementById('root'));
+registerServiceWorker();

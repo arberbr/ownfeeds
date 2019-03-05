@@ -5,12 +5,12 @@ import './App.css';
 import {Redirect, Route, Switch} from 'react-router-dom';
 
 // Import Components
-import Home from './containers/Home/Home';
+import Home from './views/Home/Home';
 
 import asyncComponent from './hoc/asyncComponent';
 
-const asyncLogin = asyncComponent(() => import('./containers/Login/Login'));
-const asyncFeedsChoser = asyncComponent(() => import('./containers/FeedsChoser/FeedsChoser'));
+const asyncLogin = asyncComponent(() => import('./views/Login/Login'));
+const asyncFeedsChoser = asyncComponent(() => import('./views/FeedsChoser/FeedsChoser'));
 
 class App extends Component {
     render() {
