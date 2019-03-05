@@ -237,6 +237,25 @@ button:focus {
     vertical-align: middle;
 }
 
+/*No Internet Notification*/
+.error-notification {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 60px;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background-color: #bb0000;
+}
+
+.error-notification h2 {
+    font-size: 1.1em;
+    color: #eee;
+    font-weight: 500;
+}
+
 /*RESPONSIVE*/
 @media (max-width: 1024px) {
     header {

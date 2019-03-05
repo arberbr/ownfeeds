@@ -65,6 +65,17 @@ class Home extends Component {
 
         let asideClasses = [];
         if(this.state.mobileMenuShown) asideClasses.push('active');
+        
+        let items;
+        if(navigator.onLine) {
+            items = <ListItems feeds={this.state.feeds} />;
+        } else {
+            items = (
+                <div className="error-notification">
+                    <h2>Error: No internet connection active!</h2>
+                </div>
+            );
+        }
 
         return (
             <Aux>
@@ -76,7 +87,7 @@ class Home extends Component {
                 </aside>
                 <main>
                     <Header clicked={this.toggleMobileMenu} />
-                    <ListItems feeds={this.state.feeds} />
+                    {items}
                 </main>
             </Aux>
         );
