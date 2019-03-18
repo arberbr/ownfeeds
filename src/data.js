@@ -54,5 +54,40 @@ export const FEEDS = [
 		name: 'Machine Learning Mindset',
 		url: 'https://machinelearningmindset.com/wp-json/wp/v2/posts?per_page=10',
 		chosenStatus: false
+	},
+	{
+		id: 9,
+		link: 'valentinog.com',
+		name: 'Valentino Gagliardi',
+		url: 'https://www.valentinog.com/blog/wp-json/wp/v2/posts?per_page=10',
+		chosenStatus: false
+	},
+	{
+		id: 10,
+		link: 'davidwalsh.name',
+		name: 'David Walsh Blog',
+		url: 'https://davidwalsh.name/wp-json/wp/v2/posts?per_page=10',
+		chosenStatus: false
+	},
+	{
+		id: 11,
+		link: 'bram.us',
+		name: 'Bram.us',
+		url: 'https://www.bram.us/wp-json/wp/v2/posts?per_page=10',
+		chosenStatus: false
+	},
+	{
+		id: 12,
+		link: 'appendto.com',
+		name: 'appendTo',
+		url: 'https://appendto.com/wp-json/wp/v2/posts?per_page=10',
+		chosenStatus: false
+	},
+	{
+		id: 13,
+		link: 'appdividend.com',
+		name: 'AppDividend',
+		url: 'https://appdividend.com/wp-json/wp/v2/posts?per_page=10',
+		chosenStatus: false
 	}
 ];
