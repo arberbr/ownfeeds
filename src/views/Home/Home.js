@@ -3,7 +3,6 @@ import { FEEDS } from '../../data';
 
 // Packages, Methods and Helpers
 import axios from 'axios';
-import { withRouter } from 'react-router-dom';
 
 // Components
 import Logo from '../../components/Logo/Logo';
@@ -36,6 +35,10 @@ class Home extends Component {
 					console.log(error);
 				});
 		});
+	}
+
+	componentWillUnmount() {
+		this.setState({ feeds: [] });
 	}
 
 	filterFeedContentBySource = (event, source) => {
@@ -95,4 +98,4 @@ class Home extends Component {
 	}
 }
 
-export default withRouter(Home);
+export default Home;
