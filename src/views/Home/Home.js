@@ -6,7 +6,7 @@ import axios from 'axios';
 
 // Components
 import Logo from '../../components/Logo/Logo';
-import Navigation from '../../components/Navigation/Navigation';
+// import Navigation from '../../components/Navigation/Navigation';
 import SourcesList from '../../components/SourcesList/SourcesList';
 import Credits from '../../components/Credits/Credits';
 import Header from '../../components/Header/Header';
@@ -82,7 +82,7 @@ class Home extends Component {
 			<>
 				<aside className={asideClasses.join(' ')}>
 					<Logo />
-					<Navigation />
+					{/* <Navigation /> */}
 					<SourcesList
 						sources={FEEDS}
 						clicked={this.filterFeedContentBySource}

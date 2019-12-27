@@ -17,8 +17,8 @@ class App extends Component {
 			<div className='App'>
 				<Suspense fallback={<p>Loading ...</p>}>
 					<Switch>
-						<Route path='/login' component={asyncLogin} />
-						<Route path='/feeds' component={asyncFeedsChoser} />
+						{/* <Route path='/login' component={asyncLogin} />
+						<Route path='/feeds' component={asyncFeedsChoser} /> */}
 						<Route path='/' exact component={Home} />
 						<Redirect to='/' />
 					</Switch>
