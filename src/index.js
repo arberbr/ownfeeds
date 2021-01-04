@@ -4,12 +4,5 @@ import App from './App';
 
 // Import Packages
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 
-const app = (
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>
-);
-
-ReactDOM.render(app, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

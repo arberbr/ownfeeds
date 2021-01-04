@@ -6,32 +6,29 @@ import axios from 'axios';
 
 // Components
 import Logo from '../../components/Logo/Logo';
-// import Navigation from '../../components/Navigation/Navigation';
 import SourcesList from '../../components/SourcesList/SourcesList';
-import Credits from '../../components/Credits/Credits';
 import Header from '../../components/Header/Header';
 import ListItems from '../../components/ListItems/ListItems';
 
 class Home extends Component {
 	state = {
 		feeds: [],
-		mobileMenuShown: false
+		mobileMenuShown: false,
 	};
 
 	componentDidMount() {
 		let feeds = [];
-		FEEDS.map(feed => {
+		FEEDS.map((feed) => {
 			return axios
 				.get(feed.url)
-				.then(response => {
-					for (let key in response.data)
-						feeds.push(response.data[key]);
-					feeds.sort(function(a, b) {
+				.then((response) => {
+					for (let key in response.data) feeds.push(response.data[key]);
+					feeds.sort(function (a, b) {
 						return new Date(b.date) - new Date(a.date);
 					});
 					this.setState({ feeds: feeds });
 				})
-				.catch(error => {
+				.catch((error) => {
 					console.log(error);
 				});
 		});
@@ -47,19 +44,19 @@ class Home extends Component {
 		let feeds = [];
 		axios
 			.get(source)
-			.then(response => {
+			.then((response) => {
 				for (let key in response.data) feeds.push(response.data[key]);
 				this.setState({ feeds: feeds });
 			})
-			.catch(error => {
+			.catch((error) => {
 				console.log(error);
 			});
 	};
 
-	toggleMobileMenu = event => {
+	toggleMobileMenu = (event) => {
 		event.preventDefault();
-		this.setState(prevState => ({
-			mobileMenuShown: !prevState.mobileMenuShown
+		this.setState((prevState) => ({
+			mobileMenuShown: !prevState.mobileMenuShown,
 		}));
 	};
 
@@ -82,12 +79,7 @@ class Home extends Component {
 			<>
 				<aside className={asideClasses.join(' ')}>
 					<Logo />
-					{/* <Navigation /> */}
-					<SourcesList
-						sources={FEEDS}
-						clicked={this.filterFeedContentBySource}
-					/>
-					<Credits />
+					<SourcesList sources={FEEDS} clicked={this.filterFeedContentBySource} />
 				</aside>
 				<main>
 					<Header clicked={this.toggleMobileMenu} />

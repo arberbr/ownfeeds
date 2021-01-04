@@ -11,7 +11,7 @@ body {
 	height: 100%;
 	background: #333;
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 1em;
+	font-size: 1.1em;
 	line-height: 1.6;
 }
 
@@ -65,51 +65,6 @@ a {
 	outline: none !important;
 }
 
-/*FORMS*/
-input[type='text'],
-input[type='email'],
-input[type='search'],
-input[type='url'],
-input[type='date'],
-input[type='password'] {
-	display: block;
-	width: 100%;
-	height: auto;
-	line-height: 1;
-	padding: 12px 0;
-	border: 1px solid transparent;
-	border-bottom: 1px solid #999;
-	background-color: #222;
-	color: #fff;
-	margin: 15px 0;
-	font-size: 16px;
-	transition: 0.3s;
-}
-
-input:focus {
-	border-bottom: 1px solid #00c853;
-	color: #00c853;
-}
-
-button {
-	display: inline-block;
-	width: auto;
-	height: auto;
-	line-height: 1;
-	padding: 10px;
-	border: 1px solid transparent;
-	background-color: transparent;
-	color: #ddd;
-	font-size: 16px;
-	cursor: pointer;
-	margin: 5px;
-}
-
-button:active,
-button:focus {
-	color: #00c853;
-}
-
 .logo-link {
 	display: inline-block;
 	color: #00c853;
@@ -148,22 +103,6 @@ button:focus {
 
 .sources-list a:hover {
 	color: #5efc82;
-}
-
-/*Credits*/
-.credits {
-	position: absolute;
-	bottom: 0;
-	margin: 20px 0;
-}
-
-.credits p {
-	color: #aaa;
-	font-size: 1em;
-}
-
-.credits a {
-	color: #00c853;
 }
 
 /*Card Element*/
@@ -322,10 +261,5 @@ button:focus {
 
 	.post-link {
 		font-size: 14px;
-	}
-
-	.credits {
-		position: relative;
-		font-size: 0.8rem;
 	}
 }
